@@ -58,6 +58,12 @@ chmod +x install.sh
 6. Open the VIGILIS AllSky web interface
 7. Enjoy the sky 🙂 
 
+## 🔌 Hardware & GPIO Wiring
+
+Complete GPIO assignments, wiring instructions and safety information:
+
+➡️ [VIGILIS AllSky Hardware Guide](./HARDWARE.md)
+
 ## 🔧 Supported Hardware
 
 ### Raspberry Pi
