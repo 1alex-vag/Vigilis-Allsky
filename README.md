@@ -2,7 +2,7 @@ VIGILIS AllSky
 
 Professional Raspberry Pi all-sky camera system for automated sky monitoring, image capture and processing.
 
-Current release: VIGILIS AllSky 1.0.0 Beta 5.4
+Current release: VIGILIS AllSky 1.0.0 Beta 5.8
 This project is currently in beta. Bugs and breaking changes may still occur.
 
 Features
@@ -36,8 +36,8 @@ Then run:
 
 sudo systemctl stop vigilis
 cd ~
-unzip VIGILIS-AllSky-1.0.0-beta5.4-RaspberryPi.zip
-cd VIGILIS-AllSky-1.0.0-beta5.4-RaspberryPi
+unzip VIGILIS-AllSky-1.0.0-beta5.8-RaspberryPi.zip
+cd VIGILIS-AllSky-1.0.0-beta5.8-RaspberryPi
 chmod +x install.sh
 ./install.sh
 
