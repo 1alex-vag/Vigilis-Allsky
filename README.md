@@ -32,9 +32,9 @@
 
 ## 📥 Download
 
-Download the current Raspberry Pi release here:
+[![Latest Release](https://img.shields.io/github/v/release/1alex-vag/Vigilis-AllSky?include_prereleases&label=Release&color=orange)](https://github.com/1alex-vag/Vigilis-AllSky/releases/latest)
 
-➡️ [VIGILIS AllSky 1.0.0 Beta 5.4](./VIGILIS-AllSky-1.0.0-beta5.4-RaspberryPi.zip)
+➡️ [Download latest VIGILIS AllSky release](https://github.com/1alex-vag/Vigilis-AllSky/releases/latest)
 
 > VIGILIS AllSky is currently beta software. Bugs and breaking changes may still occur.
 
