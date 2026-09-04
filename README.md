@@ -9,7 +9,9 @@
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License">
   <img src="https://img.shields.io/badge/Python-3.11-blue" alt="Python 3.11">
   <img src="https://img.shields.io/badge/Raspberry%20Pi-Supported-red" alt="Raspberry Pi">
-  <img src="https://img.shields.io/badge/Release-Beta%205.4-orange" alt="Beta 5.4">
+  <a href="https://github.com/1alex-vag/Vigilis-AllSky/releases/latest">
+  <img src="https://img.shields.io/github/v/release/1alex-vag/Vigilis-AllSky?include_prereleases&label=Release&color=orange" alt="Latest Release">
+</a>
   <img src="https://img.shields.io/badge/Open%20Source-Yes-success" alt="Open Source">
 </p>
 
