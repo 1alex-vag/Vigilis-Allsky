@@ -52,7 +52,7 @@ VIGILIS is controlled completely through its responsive web interface.
 
 Live station status, latest image, exposure progress, environmental values and hardware state.
 
-![VIGILIS Home](docs/images/ui-home.jpeg)
+![VIGILIS Home](Ui-home.png)
 
 ### Gallery
 
