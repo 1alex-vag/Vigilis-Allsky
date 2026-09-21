@@ -76,7 +76,7 @@ Camera, processing, archive, overlay, lens cover, sensors, heater, Telegram and 
 
 ## Night-Sky Processing
 
-VIGILIS automatically creates several products from each observing night.
+VIGILIS automatically creates several products (if selected) from each observing night.
 
 ### Timelapse
 
