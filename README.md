@@ -64,7 +64,7 @@ Browse archived nights and days, generated products, timelapses, keograms, start
 
 Environmental history, lightning activity, focus tools and hardware diagnostics.
 
-![VIGILIS Diagnostics](docs/images/ui-diagnostics.jpeg)
+![VIGILIS Diagnostics](Ui-diagnostics.png)
 
 ### Settings
 
