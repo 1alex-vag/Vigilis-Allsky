@@ -58,7 +58,7 @@ Live station status, latest image, exposure progress, environmental values and h
 
 Browse archived nights and days, generated products, timelapses, keograms, startrails and Starograms.
 
-![VIGILIS Gallery](docs/images/ui-gallery.jpeg)
+![VIGILIS Gallery](Ui-gallery.png)
 
 ### Diagnostics
 
