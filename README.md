@@ -70,7 +70,7 @@ Environmental history, lightning activity, focus tools and hardware diagnostics.
 
 Camera, processing, archive, overlay, lens cover, sensors, heater, Telegram and system configuration.
 
-![VIGILIS Settings](docs/images/ui-settings.jpeg)
+![VIGILIS Settings](Ui-settings.jpeg)
 
 ---
 
