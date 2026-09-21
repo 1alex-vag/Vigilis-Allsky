@@ -9,7 +9,7 @@ Open-source Raspberry Pi AllSky monitoring platform for automated sky imaging, e
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 > **Current release candidate:** VIGILIS AllSky 1.0.0-beta9.9  
-> Download the latest beta from the [GitHub Releases page](https://github.com/1alex-yag/Vigilis-Allsky/releases).
+> Download the latest beta from the [GitHub Releases page](https://github.com/1alex-vag/Vigilis-Allsky/releases).
 
 ---
 
@@ -155,7 +155,7 @@ Optional hardware can be disabled when not installed.
 
 Download the newest package from:
 
-**[GitHub Releases](https://github.com/1alex-yag/Vigilis-Allsky/releases)**
+**[GitHub Releases](https://github.com/1alex-vag/Vigilis-Allsky/releases)**
 
 For the current beta release, use the Raspberry Pi package:
 
@@ -224,7 +224,7 @@ This release is intended for final Raspberry Pi and overnight validation before 
 
 Download:
 
-**[VIGILIS AllSky Releases](https://github.com/1alex-yag/Vigilis-Allsky/releases)**
+**[VIGILIS AllSky Releases](https://github.com/1alex-vag/Vigilis-Allsky/releases)**
 
 ---
 
