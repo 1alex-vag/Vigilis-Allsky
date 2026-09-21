@@ -12,7 +12,7 @@
 
 </div>
 
-![VIGILIS AllSky startrail](docs/images/vigilis-hero.png)
+![VIGILIS AllSky startrail](/vigilis-hero.png)
 
 VIGILIS AllSky is a self-hosted AllSky platform for Raspberry Pi. It controls the camera, adapts exposure and gain across day, twilight and night, archives the original frames, creates night-sky products automatically, monitors environmental hardware and provides a responsive web interface for operation, diagnostics and updates.
 
