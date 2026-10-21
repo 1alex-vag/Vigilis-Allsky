@@ -1,242 +1,447 @@
+
 # VIGILIS AllSky
 
-Open-source Raspberry Pi AllSky monitoring platform for automated sky imaging, environmental monitoring and night-sky processing.
+**Open-source Raspberry Pi AllSky monitoring platform for automated sky imaging, environmental monitoring, and advanced night-sky processing.**
 
 ![VIGILIS AllSky Hero](Vigilis-hero.png)
 
-[![Release](https://img.shields.io/badge/release-beta9.9-blue)](https://github.com/1alex-yag/Vigilis-Allsky/releases)
+[![Latest Release](https://img.shields.io/github/v/release/1alex-vag/Vigilis-Allsky?label=Latest%20Release&color=blue)](https://github.com/1alex-vag/Vigilis-Allsky/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-C51A4A)](https://www.raspberrypi.com/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-> **Current release candidate:** VIGILIS AllSky 1.0.0-beta9.9  
-> Download the latest beta from the [GitHub Releases page](https://github.com/1alex-vag/Vigilis-Allsky/releases).
+### 📥 Download
+
+**[Download the Latest Stable Release](https://github.com/1alex-vag/Vigilis-Allsky/releases/latest)**
+
+The latest stable version is automatically displayed above. Download the current Raspberry Pi release package from GitHub.
 
 ---
 
-## Overview
+## 🌌 Overview
 
-VIGILIS AllSky is a self-contained AllSky camera and monitoring platform designed for Raspberry Pi systems.
+VIGILIS AllSky is an open-source, self-contained AllSky camera and environmental monitoring platform developed for Raspberry Pi systems.
 
-It combines automated image capture, adaptive exposure control, environmental monitoring, hardware automation and advanced night-sky processing in one responsive web interface.
+Designed for continuous, unattended operation, VIGILIS combines automated sky imaging, adaptive exposure control, environmental monitoring, hardware automation, and advanced night-sky processing in a single responsive web interface.
 
-Designed for continuous unattended operation, VIGILIS supports both Raspberry Pi CSI cameras and selected ZWO astronomy cameras.
+The platform supports Raspberry Pi CSI cameras and selected ZWO astronomy cameras.
+
+VIGILIS is designed for amateur astronomers, astrophotographers, and sky-monitoring enthusiasts who want a flexible, automated, and locally controlled observing station.
 
 ---
 
-## Highlights
+## ✨ Key Features
 
-- Raspberry Pi optimized
-- CSI and ZWO camera support
+### Camera & Capture
+- Raspberry Pi optimized capture system
+- CSI and selected ZWO camera support
 - Automatic Day / Transition / Night operation
-- Continuous automatic exposure and gain control
+- Adaptive exposure and gain control
+- Continuous sky monitoring
+- Configurable camera parameters
+- Manual Quick Capture
+
+### Night-Sky Processing
 - Timelapse generation
 - Keogram generation
-- Clean and Full Startrails
+- Clean Startrail processing
+- Full Startrail processing
 - Hybrid Startrail Video
-- Starogram
-- Environmental monitoring
+- Starogram generation
+- Advanced image masking
+- Configurable brightness-spike rejection
+- Product reprocessing from archived images
+
+### Hardware & Environment
+- Indoor and outdoor environmental monitoring
+- Temperature and humidity history
 - Dew-point-based heater control
-- Automatic lens cover
+- Automatic motorized lens cover
 - Lightning detection support
+- Hardware health monitoring
+- External SSD / HDD support
+
+### Software & Connectivity
+- Responsive web interface
+- Mobile-friendly design
 - Telegram notifications
-- OTA software updates
-- Mobile-first responsive web interface
+- Integrated OTA updates
+- Stable release detection
+- Archive management
+- System diagnostics
 
 ---
 
-## Interface
+## 🖥️ Web Interface
 
-VIGILIS is controlled completely through its responsive web interface.
+VIGILIS AllSky is fully controlled through a modern, responsive browser-based interface.
+
+The interface is designed for desktop computers, tablets, and smartphones, including iOS Safari.
 
 ### Home
 
-Live station status, latest image, exposure progress, environmental values and hardware state.
+The Home dashboard provides an overview of the current observing session and station status.
+
+Features include:
+- Latest captured sky image
+- Current Day / Transition / Night state
+- Capture progress
+- Exposure and gain information
+- Solar altitude and Kp forecast
+- Indoor and outdoor environmental conditions
+- Heater and lens cover status
+- Camera, CPU, memory, and storage monitoring
+- Manual Quick Capture
 
 ![VIGILIS Home](Ui-home.png)
 
 ### Gallery
 
-Browse archived nights and days, generated products, timelapses, keograms, startrails and Starograms.
+The Gallery provides access to archived images and automatically generated night-sky products.
+
+Features include:
+- Chronological night and day archives
+- Image and product browsing
+- Timelapse playback
+- Startrail and Starogram viewing
+- Product reprocessing
+- Advanced processing options
+- Archive management
 
 ![VIGILIS Gallery](Ui-gallery.png)
 
 ### Diagnostics
 
-Environmental history, lightning activity, focus tools and hardware diagnostics.
+Diagnostics provides historical environmental data and system monitoring tools.
 
-![VIGILIS Diagnostics](Ui-diagnostics.png.png)
+Features include:
+- Indoor and outdoor temperature history
+- Indoor and outdoor humidity history
+- Interactive time-range selection
+- Lightning detection history
+- Environmental trend visualization
+- Hardware diagnostic information
+
+![VIGILIS Diagnostics](Ui-diagnostics.png)
 
 ### Settings
 
-Camera, processing, archive, overlay, lens cover, sensors, heater, Telegram and system configuration.
+The Settings interface provides centralized configuration of the complete station.
+
+Configuration categories include:
+- Camera & Capture
+- Processing
+- Archive
+- Overlay
+- Lens Cover
+- Environment
+- General
+- Telegram
+- System
 
 ![VIGILIS Settings](Ui-settings.jpg)
 
 ---
 
-## Night-Sky Processing
+## 🌠 Night-Sky Processing
 
-VIGILIS automatically creates several products (if selected) from each observing night.
+VIGILIS can automatically generate several astronomical products from captured night-sky images.
+
+Products are configurable and can be reprocessed from existing archive images.
 
 ### Timelapse
 
-Creates a video from the captured AllSky frames.
+Generates a video showing the evolution of the sky throughout the observing session.
 
 ### Keogram
 
-Creates a time-based sky strip showing the evolution of the sky throughout the night.
+Creates a time-based strip image representing changes in the sky during the night.
+
+Keograms are especially useful for visualizing cloud movement, light pollution, auroral activity, and changing atmospheric conditions.
 
 ### Clean Startrail
 
-Generates a startrail image while rejecting problematic frames such as temporary glare or strong artificial light.
+Produces a startrail image while reducing interference from problematic frames.
+
+Brightness spikes and unwanted light sources can be rejected using configurable processing parameters.
 
 ### Full Startrail
 
-Creates a complete startrail using the available night frames.
+Combines the available night-sky frames into a complete startrail image.
+
+This product illustrates the apparent movement of stars caused by Earth's rotation.
 
 ### Hybrid Startrail Video
 
-Combines accumulated startrails inside a configurable masking area with the current video frame outside the mask.
+Combines accumulating startrails within a configurable masking area with the current sky image outside the mask.
+
+This creates a dynamic visualization combining star motion and real-time sky changes.
 
 ### Starogram
 
 Combines a Hybrid Startrail Video with an animated Keogram and a static time axis.
 
+The resulting product provides a detailed visualization of the entire observing session.
+
 ---
 
-## Advanced Processing
+## ⚙️ Advanced Processing
 
-Advanced Processing provides additional control for difficult observing locations.
+Advanced Processing provides additional tools for difficult observing environments and complex night-sky conditions.
 
-Features include:
-
-- configurable sample points
-- relative brightness-spike rejection
-- masking circle
-- hard or soft mask edges
-- configurable blend width
+Available options include:
+- Configurable sample points
+- Relative brightness-spike rejection
+- Adjustable masking circle
+- Hard or soft mask edges
+- Configurable blend width
 - Keogram positioning editor
+- Individual product reprocessing
 
-Source archive images are never modified by processing.
+Advanced Processing is particularly useful for installations affected by local light sources, reflections, or partially obstructed horizons.
+
+Original archived source images remain unchanged during product processing.
 
 ---
 
-## Supported Hardware
+## 🔭 Supported Hardware
 
 ### Raspberry Pi
 
-VIGILIS is designed primarily for Raspberry Pi 4 systems.
+VIGILIS AllSky is primarily designed for the Raspberry Pi 4 platform.
 
-### Cameras
+Recommended operating environment:
+- Raspberry Pi OS
+- Debian Bookworm
+- Raspberry Pi camera interface
+- Network connection
+- Sufficient storage for image archives
 
-Supported camera paths include:
+### Supported Cameras
 
+Camera support includes:
 - Raspberry Pi CSI cameras
-- IMX477
-- compatible libcamera sensors
-- selected ZWO astronomy cameras
+- Raspberry Pi HQ Camera / IMX477
+- Compatible libcamera sensors
+- Selected ZWO astronomy cameras
+
+Camera availability and functionality may depend on the installed drivers and operating system.
 
 ### Optional Hardware
 
-VIGILIS can also integrate:
+VIGILIS supports additional environmental and mechanical hardware.
 
-- SHT31 temperature / humidity sensors
-- SAMD21 outdoor sensor node
+Supported integrations include:
+- SHT31 temperature and humidity sensors
+- Seeed Studio XIAO SAMD21 sensor controllers
 - AS3935 lightning detector
-- motorized lens cover
-- heater / fan control
-- external SSD storage
+- Motorized lens cover
+- Stepper motor driver
+- Heater control
+- External SSD / HDD storage
 
-Optional hardware can be disabled when not installed.
-
----
-
-## Installation
-
-Download the newest package from:
-
-**[GitHub Releases](https://github.com/1alex-vag/Vigilis-Allsky/releases)**
-
-For the current beta release, use the Raspberry Pi package:
-
-`VIGILIS-AllSky-1.0.0-beta9.9-RaspberryPi.zip`
-
-The release archive contains the installer and all required VIGILIS application files.
+Optional hardware components can be disabled when not installed.
 
 ---
 
-## Updates
+## 🔌 Hardware Wiring & Documentation
 
-VIGILIS includes its own OTA update system.
+VIGILIS AllSky supports optional external sensors, environmental monitoring, and automated mechanical components.
 
-The web interface can:
+Detailed wiring diagrams are provided as a separate PDF document.
 
-- check GitHub for new releases
-- download the package
-- verify the archive
-- install the update
-- restart VIGILIS
-- perform a post-update health check
+### 📄 Wiring Diagrams
 
-Beta and stable release channels are supported.
+**[View / Download VIGILIS AllSky Wiring Diagrams (PDF)](VIGILIS-AllSky-Wiring-Diagrams.pdf)**
+
+The document contains:
+
+1. Complete Wiring Overview
+2. Outside Sensors
+3. Inside Sensor
+4. Stepper Motor Configuration
+
+The diagrams include Raspberry Pi GPIO connections, sensor interfaces, power distribution, and stepper motor wiring.
+
+For additional hardware details, see the [Hardware Documentation](HARDWARE.md), if included in your repository.
+
+> **Important:** Verify all GPIO connections, supply voltages, grounding, and component ratings before connecting hardware. Raspberry Pi GPIO pins operate at 3.3 V and must not be connected directly to 5 V or 12 V signals.
 
 ---
 
-## Storage & Archive
+## 🌡️ Environmental Monitoring
+
+VIGILIS provides environmental monitoring for unattended outdoor installations.
+
+Available measurements include:
+- Indoor temperature
+- Indoor relative humidity
+- Outdoor temperature
+- Outdoor relative humidity
+- Heater activity
+- Lightning activity
+
+Environmental measurements are accessible through the Home dashboard and Diagnostics interface.
+
+Historical charts provide an overview of changing environmental conditions.
+
+### Automatic Heater Control
+
+The optional heater system supports dew-point-based regulation to reduce condensation on optical surfaces.
+
+Heater operation depends on the configured environmental sensors and control parameters.
+
+### Automatic Lens Cover
+
+VIGILIS supports a motorized lens cover for protecting the optical system.
+
+The lens cover can be configured through the web interface.
+
+---
+
+## ⚡ Lightning Detection
+
+VIGILIS supports optional lightning detection using compatible AS3935 hardware.
+
+Lightning information can be monitored through the Diagnostics interface.
+
+This feature requires the appropriate sensor hardware and configuration.
+
+---
+
+## 💾 Storage & Archive
 
 Captured images and generated products can be stored on:
+- Internal Raspberry Pi storage
+- External SSD / HDD
 
-- Raspberry Pi storage
-- external SSD / HDD
+The integrated archive management system supports configurable retention and cleanup.
 
-Archive retention and cleanup settings are available directly from the web interface.
-
----
-
-## Environmental Monitoring
-
-VIGILIS can record:
-
-- indoor temperature
-- indoor humidity
-- outdoor temperature
-- outdoor humidity
-- heater state
-- lightning activity
-
-Diagnostics provides historical plots including a rolling 24-hour view.
+Archives are organized into observing sessions, providing convenient access to historical images and generated products.
 
 ---
 
-## Open Source
+## 🚀 Installation
 
-VIGILIS AllSky is an open-source project released under the MIT License.
+Download the latest stable VIGILIS AllSky release from GitHub.
 
-Contributions, testing and hardware reports are welcome.
+### Step 1 — Download
+
+**[Latest Stable Release](https://github.com/1alex-vag/Vigilis-Allsky/releases/latest)**
+
+Choose the appropriate Raspberry Pi release archive.
+
+### Step 2 — Extract
+
+Extract the downloaded release package on your Raspberry Pi.
+
+### Step 3 — Install
+
+Follow the installation instructions included with the release package.
+
+The package contains the required application files and installation resources.
+
+### Step 4 — Configure
+
+Open the VIGILIS web interface and configure:
+- Camera settings
+- Location
+- Capture parameters
+- Storage
+- Optional sensors
+- Lens cover
+- Processing options
+
+After configuration, the station can operate automatically.
 
 ---
 
-## Current Status
+## 🔄 Software Updates
 
-**Latest release candidate:** `1.0.0-beta9.9`
+VIGILIS includes an integrated Over-the-Air (OTA) update system.
 
-This release is intended for final Raspberry Pi and overnight validation before V1.0.
+The updater can:
+- Check GitHub for new releases
+- Download update packages
+- Verify downloaded archives
+- Install application updates
+- Restart VIGILIS
+- Perform post-update health checks
 
-Download:
+The current stable release is available at:
 
-**[VIGILIS AllSky Releases](https://github.com/1alex-vag/Vigilis-Allsky/releases)**
+**[VIGILIS AllSky Releases](https://github.com/1alex-vag/Vigilis-Allsky/releases/latest)**
+
+The release badge at the top of this README automatically displays the latest stable GitHub release.
 
 ---
 
-## Credits
+## 📱 Remote Access
+
+VIGILIS provides a responsive web interface accessible from supported devices on the station's network.
+
+Supported browsers include modern desktop and mobile browsers.
+
+The interface is optimized for:
+- Desktop computers
+- iPhone
+- iPad
+- Other modern smartphones and tablets
+
+For access outside the local network, use an appropriately secured remote connection.
+
+---
+
+## 🛠️ Diagnostics & Reliability
+
+VIGILIS includes monitoring features intended for continuous operation.
+
+Available monitoring includes:
+- Camera state
+- Storage availability
+- CPU utilization
+- Memory utilization
+- Environmental sensor status
+- Hardware status
+- Capture state
+- System diagnostics
+
+These tools help identify configuration issues and monitor station operation.
+
+---
+
+## 🤝 Open Source
+
+VIGILIS AllSky is an open-source project.
+
+Contributions, testing, feedback, and hardware reports are welcome.
+
+If you encounter an issue, please provide relevant diagnostic information and system details through GitHub.
+
+**[GitHub Issues](https://github.com/1alex-vag/Vigilis-Allsky/issues)**
+
+---
+
+## 👨‍💻 Credits
 
 Developed by **Alexander Gschöpf**
 
-Astronomy / astrophotography:
-`@ag_astrophotography`
+Astrophotography & Astronomy:
+
+**[@ag_astrophotography](https://www.instagram.com/ag_astrophotography/)**
 
 ---
 
-## License
+## 📄 License
 
-MIT License
+VIGILIS AllSky is released under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <strong>VIGILIS AllSky</strong><br>
+  Automated Sky Monitoring & Astrophotography<br><br>
+  Developed by
+  <a href="https://www.instagram.com/ag_astrophotography/">ag_astrophotography</a>
+</p>
