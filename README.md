@@ -88,7 +88,7 @@ The dashboard provides complete control over the observing station through four 
 
 ### Dashboard Preview
 
-![VIGILIS AllSky Dashboard](VIGILIS-AllSky-Dashboard.jpg)
+![VIGILIS AllSky Dashboard](Vigilis-Allsky-Dashboard.jpg)
 
 The dashboard combines astronomical monitoring, environmental data, archive management, and station configuration in one interface.
 
