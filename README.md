@@ -86,9 +86,11 @@ The dashboard provides complete control over the observing station through four 
 - **Diagnostics** — Historical environmental measurements, lightning detection, and system diagnostics.
 - **Settings** — Camera, processing, archive, overlay, lens cover, environment, Telegram, and system configuration.
 
-### Dashboard Preview
+### Dashboard Preview Mobile WebUI
 
 ![VIGILIS AllSky Dashboard](Vigilis-Allsky-Dashboard.jpg)
+
+### Dashboard Preview Desktop WebUI
 
 The dashboard combines astronomical monitoring, environmental data, archive management, and station configuration in one interface.
 
